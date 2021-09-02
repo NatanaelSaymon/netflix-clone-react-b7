@@ -1,0 +1,128 @@
+:root {
+  --local-size: 15px;
+}
+
+.featured {
+  height: 100vh;
+}
+
+.featured__vertical {
+  width: inherit;
+  height: inherit;
+
+  background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.featured__horizontal {
+  width: inherit;
+  height: inherit;
+
+  background: linear-gradient(to right, #111 30%, transparent 70%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  padding-top: 70px;
+  padding-bottom: 130px;
+  padding-left: 30px;
+  
+}
+
+.featured__name {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.featured__info {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: var(--local-size);
+}
+
+.featured__points,
+.featured__year,
+.featured__seasons,
+.featured__episodes {
+  display: inline-block;
+  margin-right: var(--local-size);
+}
+
+.featured__points {
+  font-weight: bold;
+  color: #46d369;
+}
+
+.featured__description {
+  max-width: 600px;
+  margin-top: var(--local-size);
+  font-size: 20px;
+  color: #999;
+}
+
+.featured__buttons {
+  margin-top: var(--local-size);
+}
+
+.featured__btn {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: .3s;
+}
+
+.featured__btn--watch {
+  background-color: #fff;
+  color: #111;
+}
+
+.featured__btn--myList {
+  background-color: #333;
+  color: #fff;
+}
+
+.featured__btn--watch:hover {
+  background-color: #ccc;
+}
+
+.featured__btn--myList:hover {
+  background-color: #666;
+}
+
+.featured__genres {
+  margin-top: var(--local-size);
+  font-size: 18px;
+  color: #999;
+}
+
+@media(max-width: 760px){
+  .featured {
+    height: 80vh;
+  }
+
+  .featured__name {
+    font-size: 35px;
+  }
+
+  .featured__info {
+    font-size: 16px;
+  }
+
+  .featured__description {
+    font-size: 14px;
+    max-width: 100%;
+    margin-right: 30px;
+  }
+
+  .featured__btn {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  .featured__genres {
+    font-size: 14px;
+  }
+}
