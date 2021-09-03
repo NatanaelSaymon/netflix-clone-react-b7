@@ -15,6 +15,7 @@ const Default = () => {
 
   const [featuredData, setfeaturedData] = useState(null)
 
+  //variaveis para o evento de monitoramento do scroll da pagina
   const [scrollActive, setScrollActive] = useState(false)
 
   //Quando a tela for carregada, vai executar o codigo inserido
@@ -37,7 +38,7 @@ const Default = () => {
   }, [])
 
 
-  //Adicioando evento de monitoramento do scroll da pagina
+  //Adicionando evento de monitoramento do scroll da pagina
   useEffect(() => {
     const scrollListener = () => {
       if(window.scrollY > 10){
