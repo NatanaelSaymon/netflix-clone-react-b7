@@ -1,6 +1,5 @@
 import React from 'react'
 import './style.css'
-// import logo from '../../../pulbic/img/netflix-logo.png'
 
 const Header = ({scroll}) => {
   return(

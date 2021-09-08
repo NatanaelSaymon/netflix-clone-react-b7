@@ -53,7 +53,7 @@ export default {
       },
       {
         slug: 'comedy',
-        title: 'Comedia',
+        title: 'Comédia',
         items: await basicFetch(`/discover/movie?with_genres=35&language=pt-BR&api_key=${API_KEY}`)
       },
       {
@@ -68,7 +68,7 @@ export default {
       },
       {
         slug: 'documentary',
-        title: 'Documentarios',
+        title: 'Documentários',
         items: await basicFetch(`/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`)
       },
     ]
